@@ -11,3 +11,166 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*,html{
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+  letter-spacing: 3px;
+  -ms-overflow-style: none;  /* Hide Scrollbar Internet Explorer 10+ */
+  scrollbar-width: none; /* Hide Scrollbar Firefox */
+}
+
+::-webkit-scrollbar { /* Hide Scrollbar Chrome */
+  display: none;
+}
+
+body{
+  font-size: 2vmax;
+  font-family: 'Bangers', cursive;
+  background: url('https://images.unsplash.com/photo-1471877325906-aee7c2240b5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHN1cGVyaGVybyUyMGJhY2tncm91bmR8ZW58MHx8MHx8');
+  background-size: cover;
+  background-color: black;
+}
+
+.wrapper{
+  margin: 20px 50px;
+}
+
+/*              Title                */
+#title{
+  text-align: center;
+}
+
+/*              Input                */
+.input{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-input{
+  display: inline-flex;
+}
+
+input{
+  width: 30vmax;
+  height: 3vmax;
+  font-size: 1.5rem;
+  font-family: 'Comic Neue', cursive;
+  letter-spacing: 0;
+  text-align: center;
+  border: 1px solid aliceblue;
+  border-radius: 30px;
+  background: transparent;
+}
+
+.fa-search{
+  margin: 0;
+  height: 1vmax;
+  translate: -68px -5px;
+  border: none !important;
+}
+
+/*          Name             */
+.name{
+  margin-bottom: 20px;
+  letter-spacing: 4px;
+}
+
+/*          Content          */
+.content{
+  display: flex;
+}
+
+/*               Image              */
+img{
+  height: 450px;
+  width: auto;
+  border-radius: 2%;
+  box-shadow: 6px 10px 12px rgba(0, 0, 0, 0.5);
+}
+
+/*               Info/Stats          */
+.info{
+  margin-top: 20px;
+  margin-left: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.info > h4{
+  margin-top: 5px;
+  margin-bottom: 4px;
+}
+
+.info > p{
+  display: inline-block;
+  margin-right: 30px;
+}
+
+/*               Button              */
+button{
+  background: transparent;
+  border: 1px solid rgba(240, 232, 232, 0.5);
+  padding: 2%;
+  font-size: 1.4rem;
+  font-family: 'Bangers', cursive;
+  border-radius: 30px;
+  opacity: 0.7;
+}
+
+button:hover{
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper{
+      margin: 10px 20px;
+  }
+  .input{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 20px;
+  }
+  .search-input{
+      justify-content: center;
+  }
+  input{
+      height: 5vmax;
+      width: 50vmax;
+      font-size: large;
+  }
+  .search{ /* search icon */
+      padding: 0;
+      height: 10px;
+      translate: -25px 10px;
+  }
+  .name{
+      text-align: center;
+  }
+  .content{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+  }
+  img{
+      height: 325px;
+      width: auto;
+  }
+  .info{
+      margin: 20px 0;
+      font-family: 'Comic Neue', cursive !important;
+  }
+  .button-div{
+      display: flex;
+      justify-content: center;
+  }
+  button{
+      margin-top: 10px;
+      width: max-content;
+      font-size: medium;
+  }
+}
